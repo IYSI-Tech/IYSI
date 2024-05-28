@@ -1,0 +1,132 @@
+.course-fee .center {
+    display: grid;
+    grid-template-columns: 22rem auto;
+    margin:0 3rem;
+    gap: 3.5rem;
+}
+
+.course-fee .center .highlight, .course-fee .center .fee {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--color-black-transparent-2);
+    padding: 2rem;
+    width: 100%;
+}
+
+.course-fee .center .highlight h1{
+    letter-spacing: unset;
+    font-size: 1.3rem;
+    color: var(--color-bg-variant-light);
+}
+
+.highlight ul{
+    margin-top: 1rem;
+}
+
+.highlight li{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0;
+}
+
+.course-fee .center .highlight li .highlight-icon{
+    color: var(--color-bg-variant-light);
+}
+
+.course-fee .center .fee {
+    padding: 2rem;
+}
+
+.course-fee .center .fee > div:first-child h1{
+    margin: 0 0 1rem 0;
+}
+.course-fee .center .fee > div:last-child h1{
+    margin:  0 0 1rem 0;
+}
+
+.course-fee .center .fee > div {
+    display: block;
+    margin-bottom: 2rem;
+}
+.course-fee .center .fee > div:last-child{
+    margin-bottom: 0;
+}
+
+.course-fee .center .fee > div:last-child > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.course-fee .center .fee button{
+    height: 2.6rem;
+    background-color: var(--color-bg-variant-light);
+    color: var(--color-bg);
+    font-size: unset;
+}
+
+
+
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+
+.course-fee .center {
+    grid-template-columns: 1fr;
+}
+
+.course-fee .center .highlight {
+    justify-self: center;
+    padding: 3rem 5rem;
+}
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+
+    .course-fee .center {
+        margin: 0 2rem;
+    }
+
+    .course-fee .center .highlight {
+        padding: 2rem;
+    }
+
+    .course-fee .center .fee {
+        border: unset;
+        padding: 0;
+    }
+
+    .course-fee .center .fee > div {
+        text-align: center;
+        border: 1px solid var(--color-black-transparent-2);
+        padding: 2rem;
+        border-radius: var(--border-radius-2);
+    }
+
+    .course-fee .center .fee > div:last-child div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course-fee .center .fee button {
+        margin-top: 2rem;
+    }
+
+}
