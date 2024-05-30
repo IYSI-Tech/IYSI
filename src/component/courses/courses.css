@@ -1,0 +1,118 @@
+.course .center {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.course .center h1 {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  color: var(--color-bg-variant);
+}
+
+.course .center > p {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.course-gallery {
+  display: block;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.course .center .carousel {
+  margin:2rem 10%;
+}
+.course .center .card {
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 5%;
+  gap: 0.5rem;
+  box-shadow: var(--box-shadow-2);
+}
+
+.course .center .card span {
+  background-color: var(--color-bg-variant);
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--color-bg);
+}
+
+.course .center .card h1 {
+  letter-spacing: unset;
+  color: var(--color-bg-variant-light);
+  margin: 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+.course .center .card p {
+  font-size: 0.9rem;
+  color: var(--color-text-grey);
+}
+
+/* ========= react-dot-button style edit ======== */
+
+.dott .react-multi-carousel-dot button {
+  border-color: var(--color-bg-variant-light);
+  background-color: var(--color-bg-variant-light);
+}
+
+.dott .react-multi-carousel-dot--active button {
+  background-color: var(--color-bg);
+}
+
+/* ========= react-dot-button style edit ======== */
+
+.course .center > button {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-bg);
+  background-color: var(--color-bg-variant-light);
+  padding: 1.2rem 1.5rem;
+}
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+}
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .course .center .card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .course .center {
+    padding: 0 1rem;
+  }
+  .course .center > p {
+    font-size: 1.4rem;
+}
+
+.course .center .carousel {
+  margin: 2rem 1rem;
+}
+
+}

@@ -1,0 +1,165 @@
+/* +++++++++++ Header +++++++++++ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--color-bg);
+    z-index: 2;
+}
+
+header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0,0.1);
+    height: 5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.header .center .btn {
+    display: none;
+    padding: 0.3rem;
+    margin: 0;
+    background-color: var(--color-bg-variant);
+    color: var(--color-bg);
+}
+.logo-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    padding: 0.5rem;
+    background-color: var(--color-bg-variant);
+}
+
+.logo p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    gap: 1rem;
+    
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    transition: var(--transition);
+    overflow: hidden;
+    
+}
+header nav ul:last-child {
+    display: grid;
+    
+}
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    border-radius: var(--border-radius-2);
+}
+
+header nav ul:last-child li a{
+    background-color: var(--color-bg-variant);
+    color: var(--color-bg);
+}
+
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+
+    header nav {
+        width: 38.6rem ;
+    }
+
+}
+
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+
+    .header .center .btn {
+        display: flex;
+    }
+
+    header nav ul:first-child {
+        display: block;
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        padding: 1rem;
+        width: 95%;
+        opacity: 1;
+        backdrop-filter: blur(1rem);
+        background-color: var(--color-bg);
+        transition: width opacity 0.3s;
+        height: calc(100% - 5rem);
+    }
+
+    header nav ul:first-child.hide{
+        width: 0;
+        padding: 0;
+        opacity: 0.2;
+        
+    }
+    
+    header nav ul:first-child li{
+        display: block;
+        text-align: left;
+    }
+    
+    header nav ul:first-child a{
+        display: block;
+        text-align: left;
+        transition: none;
+    }  
+    header nav ul:first-child a:hover{
+        background-color: var(--color-bg-variant-light);
+        color: var(--color-bg);
+    }
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+
+    .header .center {
+        padding: 0.5rem;
+    }
+
+    .header .center .btn {
+        display: flex; 
+    }
+
+    header nav {
+        margin-right: 0.5rem;
+    }
+    header nav ul:first-child {
+        border-top: 2px solid var(--color-bg-variant-light);
+        border-bottom: 2px solid var(--color-bg-variant-light);
+    }
+}

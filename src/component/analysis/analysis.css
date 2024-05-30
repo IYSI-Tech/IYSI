@@ -1,0 +1,219 @@
+.analysis .center {
+  margin: 0 3rem;
+  text-align: center;
+}
+.analysis .center > h1{
+  letter-spacing: 0.1rem;
+}
+.analysis .center > h1,
+.swot h1 {
+  color: var(--color-bg-variant-light);
+}
+
+.analysis .center > p {
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 2rem;
+}
+
+.swot {
+  display: grid;
+  grid-template-columns: 66% 32%;
+  gap: 2%;
+  margin-top: 3rem;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.swot-text {
+  padding-right: 1rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.swot-text h1  {
+  font-size: 1.6rem;
+}
+.swot-text > p, .analysis .center > h1 {
+  padding: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.swot-text > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+.swot-text .swot-arcordion {
+  display: block;
+  border-radius: var(--border-radius-2);
+  padding: 0.8rem;
+  overflow-y: hidden;
+  border: 1px solid var(--color-black-transparent-1);
+}
+
+.swot-arcordion .collapse-visibility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swot-text .swot-arcordion p {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.95rem;
+  margin-right: 1rem;
+}
+
+.swot-text .swot-arcordion p.offEllipe {
+  white-space: unset;
+  text-overflow: unset;
+}
+
+.swot-text .swot-arcordion blockquote {
+  height: 0;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.swot-text blockquote.width {
+  height: 10rem;
+  overflow: visible;
+  padding-top: 1rem;
+}
+
+/* ============== SWOT FORM =================== */
+
+.swot-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.swot-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 1.5rem;
+  width: 22rem;
+  height: fit-content;
+  padding: 1.2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-bg);
+  border-bottom: 3px solid var(--color-bg-variant-light);
+  outline: 1px solid var(--color-bg);
+}
+
+.swot-form form input,
+.swot-form form select {
+  height: 2.8rem;
+  border-radius: var(--border-radius-2);
+  padding: 10px;
+  border: 1px solid var(--color-black-transparent-2);
+  background-color: var(--color-bg);
+}
+
+.swot-form form select {
+  border: none;
+  width: 100%;
+}
+
+.swot-form form .select-container {
+  padding-right: 1rem;
+  border-radius: var(--border-radius-2);
+  border: 1px solid var(--color-black-transparent-2);
+}
+
+.swot-form p {
+  font-size: 0.75rem;
+}
+
+.swot-form button {
+  height: 2.7rem;
+  color: var(--color-bg);
+  justify-content: center;
+  background-color: var(--color-bg-variant-light);
+  margin-bottom: 0.5rem;
+}
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+  .analysis .center .swot {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    padding: 0;
+    width: 100%;
+  }
+
+  .swot-text {
+    padding-right: 0;
+  }
+
+  .swot-arcordion .collapse-visibility {
+    align-items: normal;
+  }
+
+  .swot-text .swot-arcordion p {
+    white-space: wrap;
+  }
+
+  .swot-text .swot-arcordion span {
+    display: flex;
+  }
+}
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .analysis .center {
+    margin: 0 2rem;
+  }
+
+  .analysis .center > h1 {
+    font-size: 0.8rem;
+  }
+  .swot-text {
+    text-align: center;
+  }
+
+  .analysis .center > p {
+    font-size: 1.4rem;
+    
+  }
+
+  .swot-text blockquote.width {
+    height: 16rem;
+  }
+
+  .swot-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .swot-text .swot-arcordion {
+    text-align: left;
+  }
+
+  .swot-text .swot-arcordion p,
+  blockquote {
+    font-size: 0.9rem;
+  }
+  .swot-text .swot-arcordion span {
+    display: none;
+  }
+  .swot-form form {
+    width: unset;
+  }
+}

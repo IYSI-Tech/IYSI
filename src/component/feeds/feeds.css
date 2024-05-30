@@ -1,0 +1,103 @@
+
+
+.feeds .center{
+    display: flex;
+    justify-content:space-between;
+    border-radius: var(--border-radius-1);
+    border: 1px solid var(--color-bg-variant-transparent);
+    padding: 1.5rem;
+    margin: 0 9rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feeds .center > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.feeds .center > div > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--color-black-transparent-2);
+    padding: 0.8rem;
+}
+
+
+.feeds .center div > h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.feeds .center div > p{
+    color: var(--color-text-grey);
+}
+.txt-green, .txt-orange, .txt-green {
+    font-weight: inherit;
+}
+
+.txt-orange{
+    color: var(--txt-color-orange);
+}
+
+.txt-red{
+    color: var(--txt-color-red);
+}
+
+.txt-green{
+    color: var(--txt-color-green);
+}
+
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+
+    .feeds .center > div:last-child{
+        width: 260.2px;
+    }
+}
+
+
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+    
+   
+}
+
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+    .feeds .center{
+        min-width:200px;
+        margin: 0 11%;
+    }
+   
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+    .feeds .center {
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0 2rem;
+    }
+    
+    .feeds .center > div{
+    width: 260.2px;
+    }
+
+    .feeds .center div > h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    
+
+}

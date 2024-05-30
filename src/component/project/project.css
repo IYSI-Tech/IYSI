@@ -1,0 +1,201 @@
+.project .center {
+  display: grid;
+  grid-template-columns: 50% 48%;
+  gap: 2%;
+  margin: 0 3rem;
+}
+
+
+/* ============== HAND ON PROJECT =============== */
+.project .center .hand-on-project {
+  display: block;
+}
+.project .center .hand-on-project > p {
+  font-size: 0.9rem;
+}
+
+.hand-on-project .hand-on-project .slide {
+  width: 100%;
+  position: relative;
+}
+
+.hand-on-project .slide .carousel {
+  height: 14.3rem;
+  align-items: start;
+  margin: 1rem 0;
+}
+
+.hand-on-project .slide .project-counter {
+  position: relative;
+  text-align: center;
+  border-radius: var(--border-radius-2);
+  box-shadow: var(--box-shadow);
+  padding: 0.3rem;
+  margin: 1rem;
+  overflow: hidden;
+}
+.hand-on-project .slide .project-counter .counter span {
+  color: var(--color-bg);
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.hand-on-project .slide .project-counter p {
+  color: var(--color-bg);
+  font-weight: 200;
+}
+
+.hand-on-project .slide .project-counter > span {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  z-index: 6;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hand-on-project .slide .project-counter span:nth-child(1) {
+  top: -1rem;
+  right: 0.5rem;
+}
+
+.hand-on-project .slide .project-counter span:nth-child(2) {
+  bottom: -1rem;
+  left: 0.5rem;
+}
+
+.hand-on-project .slide .carousel button {
+  background-color: var(--color-bg);
+  position: absolute;
+  width: 4.3rem;
+  height: 4.3rem;
+  bottom: 1rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.hand-on-project .slide .carousel button:hover {
+  background-color: var(--color-bg-variant);
+  color: var(--color-bg);
+}
+
+.hand-on-project .slide .carousel .custom-right-arrow {
+  left: 6rem;
+}
+
+
+
+.lightPurple {
+  background-color: var(--color-light-purple);
+}
+
+.lightGreen {
+  background-color: var(--color-light-green);
+}
+
+/* =========== AUTHENTICATION ============ */
+
+.project .center .authentication-container {
+  display: block;
+}
+
+.authentication-container .carousel-container {
+  padding: 3rem 0;
+}
+
+.authentication-container .authentication  {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-2);
+  padding: 2.5rem;
+  margin: 0 3rem;
+  background-color: var(--color-bg);
+}
+
+.authentication-container .authentication  > * {
+  margin-top: 1rem;
+}
+.authentication-container .authentication  h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.authentication-container .authentication  .cisco {
+  width: 13rem;
+}
+.authentication-container .authentication  .tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.authentication-container .authentication  .tools p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.authentication-container .authentication  .tools .authentics-img {
+  width: 1.7rem;
+}
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+}
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+  .project .center {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5%;
+    margin: 0 3rem;
+  }
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .project .center {
+    margin: 0 2rem;
+  }
+
+  .hand-on-project .slide .carousel {
+    padding: 2rem 0 0 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .authentication-container .authentication  {
+    padding: 2rem;
+    margin: 0 1rem;
+    box-shadow: var(--box-shadow-2);
+  }
+
+  .authentication-container .authentication  h1 {
+    font-size: 1rem;
+  }
+  .authentication-container .authentication  .tools p {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .authentication-container .authentication  .tools .authentics-img {
+    width: 1.5rem;
+  }
+
+  .hand-on-project .slide .project-counter {
+    padding: 0.3rem;
+    margin: 0;
+    box-shadow: var(--box-shadow-2);
+  }
+}

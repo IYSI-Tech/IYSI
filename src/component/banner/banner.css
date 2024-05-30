@@ -1,0 +1,167 @@
+/* +++++++++++ Banner +++++++++++ */
+
+.banner .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 3rem;
+  height: calc(100% - 5rem);
+  background-image: url(../../asset/images/banner-bg.webp);
+  background-size: cover;
+}
+
+.banner-txt {
+  display: block;
+  margin: auto 0;
+  color: var(--color-bg);
+}
+
+.banner-txt span:first-child {
+  display: inline-block;
+  font-size: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-2);
+}
+
+.banner-txt p {
+  color: var(--color-bg);
+  font-size: 0.9rem;
+  width: 25rem;
+}
+
+.banner-txt h1 {
+  font-size: 2.4rem;
+}
+.banner-txt h1 span {
+  font-weight: inherit;
+}
+
+.banner-txt h1,
+.banner-txt h2 {
+  color: var(--color-bg);
+}
+
+.banner-txt span.btn {
+  color: var(--color-black);
+  font-weight: 400;
+  height: 3rem;
+  gap: 1rem;
+}
+
+.white {
+  background-color: var(--color-bg);
+}
+
+.banner .center .get-in-touch {
+  display: block;
+  background-color: var(--color-bg);
+  width: 429px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.banner .center .get-in-touch form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: var(--color-black);
+}
+
+.banner .center .get-in-touch form input,
+.banner .center .get-in-touch form select {
+  height: 2.8rem;
+  border-radius: var(--border-radius-2);
+  padding: 10px;
+  border: 1px solid var(--color-black-transparent-2);
+}
+
+.banner .center .get-in-touch form select {
+  border: none;
+  width: 100%;
+}
+
+.banner .center .get-in-touch form .select-container {
+  padding-right: 1rem;
+  border-radius: var(--border-radius-2);
+  border: 1px solid var(--color-black-transparent-2);
+}
+.banner .center .get-in-touch button.btn {
+  height: 2.6rem;
+  width: fit-content;
+  color: var(--color-bg);
+}
+
+.bg-variant {
+  background-color: var(--color-bg-variant);
+}
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+  .banner .center .get-in-touch {
+    width: 400px;
+  }
+}
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+  .banner .center {
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .banner .center .banner-txt {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner .center .get-in-touch {
+    width: 429px;
+  }
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .banner .center {
+    padding: 2rem;
+  }
+
+  .banner-txt > * {
+    margin-top: 1rem;
+  }
+
+  .banner-txt h1 {
+    font-size: 2rem;
+  }
+  .banner-txt p {
+    width: unset;
+  }
+
+  .banner-txt h1 span {
+    display: none;
+  }
+
+  .banner .center .get-in-touch {
+    width: 350px;
+    text-align: center;
+  }
+  .banner .center .get-in-touch form select {
+    border: none;
+    background-color: var(--color-bg);
+    width: 100%;
+  }
+}

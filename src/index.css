@@ -1,0 +1,186 @@
+:root{
+    --color-bg:#fff;
+    --color-bg-transparent: rgba(255,255,255,0.3);
+    --color-bg-variant:#ffa500;
+    --color-bg-variant-light: #ffa500; /* #ffba49 (previous color)*/
+    --color-bg-variant-transparent: rgba(255,165,0,0.3);
+    --color-black:#202020;
+    --color-text-grey: #444;
+    --color-black-transparent-1: rgba(0, 0, 0, 0.2);
+    --color-black-transparent-2: rgba(0, 0, 0, 0.05);
+    --transition:all 0.3s ease-in-out;
+    --txt-color-red: rgb(255, 0, 0) ;
+    --txt-color-green: rgb(52, 255, 96) ;
+    --txt-color-orange: rgb(255, 165, 0);
+    --color-light-green: rgb(52, 172, 126);
+    --color-light-purple: rgb(141, 85, 214);
+    --border-radius-1:0.625rem; 
+    --border-radius-2:0.3rem;
+    --box-shadow: 0 0.3rem 1.2rem rgba(0, 0, 0, 0.15);
+    --box-shadow-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --btn-padding: 0.6rem 1.2rem;
+    --pointer:pointer;
+    --container-width-lg:100%;
+    --container-width-md:86%;
+    --container-width-sm:90%
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./asset/font/Roboto-Black.ttf);
+    font-weight: bolder;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(./asset/font/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./asset/font/Roboto-Medium.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./asset/font/Roboto-Regular.ttf);
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./asset/font/Roboto-Light.ttf);
+    font-weight:200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./asset/font/Roboto-Thin.ttf);
+    font-weight: 100;
+    font-display: swap;
+}
+
+*, ::before, ::after{
+    font-family:"Roboto",Arial,sans-serif;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+    font-display: swap;
+    font-weight: 300;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+}
+
+.container {
+    padding-top: 5rem;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:100;
+    color: var(--color-black);
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+h3{
+    font-size: 0.9rem;
+    font-weight: bold;  
+}
+
+a{
+    transition:var(--transition);
+    color: var(--color-black);
+}
+
+p{
+    color:var(--color-black);
+    line-height: 1.6rem;
+}
+
+img{
+    display:block;
+    width:100%;
+    background-position:top;
+    object-fit:cover
+}
+
+button, .btn{
+    display:inline-flex;
+    align-items: center;
+    padding: var(--btn-padding);
+    border-radius:0.3rem;
+    font-weight: 400;
+    cursor: var(--pointer);
+}
+input, option, select{
+    font-size: 0.9rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--color-black);
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px var(--color-bg);
+}
+
+
+
+
+/* ================ LARGE SCREEN (DESKTOP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}
+
+
+
+/* ================ LAPTOP =============== */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+h1 {
+    font-size:1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+  
+}
