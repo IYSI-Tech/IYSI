@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('mobile')->unique();
             $table->string('organization')->nullable();
             $table->string('position')->nullable();
-            $table->string('proposal')->nullable();
+            $table->text('proposal')->nullable();
             $table->string('website')->nullable();
             $table->string('referral_source')->nullable();
             $table->string('comment')->nullable();

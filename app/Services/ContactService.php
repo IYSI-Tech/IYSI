@@ -1,12 +1,12 @@
 <?php
 namespace App\Services;
 
-use App\Models\User;
+use App\Models\Contact;
 
-class UserService 
+class ContactService 
 {
     public function create(array $data)
     {  
-        return User::create($data);
+        return Contact::create($data);
     }
 }

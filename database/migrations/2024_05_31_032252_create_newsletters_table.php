@@ -18,7 +18,7 @@ return new class extends Migration
             $table->enum('gender', ['male', 'female']);
             $table->string('occupation')->nullable();
             $table->string('institution')->nullable();
-            $table->string('interest')->nullable();
+            $table->string('area_interest')->nullable();
             $table->string('frequency');
             $table->timestamps();
         });

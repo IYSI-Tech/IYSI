@@ -25,8 +25,8 @@ class UserRequest extends FormRequest
             'name'         =>  ['required', 'string', 'min:3'],
             'email'        =>  ['required', 'string', 'max:150', 'unique:users,email'],
             'gender'       =>  ['required', 'string', 'in:male,female'],
-            'occupation'   =>  ['required', 'string', 'max:150'],
-            'institution'  =>  ['required', 'string', 'max:150']
+            'occupation'   =>  ['required', 'string', 'max:200'],
+            'institution'  =>  ['required', 'string', 'max:200']
         ];
     }
 }

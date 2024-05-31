@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
-    public function register(UserRequest $request, UserService $service)
+    public function create(UserRequest $request, UserService $service)
     {
         try {
-            $user = $service->register($request->validated());
+            $user = $service->create($request->validated());
 
             return response()->json([
                 'status'  => true,
@@ -26,10 +26,10 @@ class UserController extends Controller
             Log::error($th->getMessage());
 
             return response()->json([
-                'status' => true,
-                'message' => 'An error occurred while registering'
-            ], 401);
-            
+                'status' => false,
+                'message' => 'An error occurred while at the server side'
+            ], 403);
+
         }
     }
 }

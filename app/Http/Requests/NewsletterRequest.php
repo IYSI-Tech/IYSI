@@ -11,7 +11,7 @@ class NewsletterRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,13 @@ class NewsletterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name'           =>  ['required', 'string', 'min:3'],
+            'email'          =>  ['required', 'string', 'max:150', 'unique:newsletters,email'],
+            'gender'         =>  ['required', 'string', 'in:male,female'],
+            'occupation'     =>  ['required', 'string', 'max:200'],
+            'institution'    =>  ['required', 'string', 'max:200'],
+            'area_interest'  =>  ['required', 'string', 'max:200'],
+            'frequency'      =>  ['required', 'string', 'max:200']
         ];
     }
 }
