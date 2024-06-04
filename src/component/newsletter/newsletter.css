@@ -1,0 +1,61 @@
+.newsletter {
+    width: 100%;
+}
+
+.newsletter .center {
+    margin: 0 5rem;
+    background-color: var(--color-bg-variant);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: var(--border-radius-1);
+}
+
+.newsletter .center > div {
+    display: flex;
+    gap: 1rem;
+}
+.newsletter .center > div img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.newsletter .center div .email-txt {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter .center div .email-txt h1{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-bg);
+    margin: 0;
+}
+.newsletter .center div .email-txt p{
+    font-weight: 200;
+    margin-top: 0.3rem;
+    width: 80%;
+    color: var(--color-bg);
+}
+
+.newsletter .center .subscribe-input {
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    width:25rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius-2);
+}
+.newsletter .center .subscribe-input input{
+    width: 100%;
+    padding-left: 0.5rem;
+}
+.newsletter .center .subscribe-input button{
+    height: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    background-color: var(--color-bg-variant);
+    color: var(--color-bg);
+}
+
+

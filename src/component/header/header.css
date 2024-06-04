@@ -5,7 +5,7 @@ header {
     left: 0;
     width: 100vw;
     background-color: var(--color-bg);
-    z-index: 2;
+    z-index: 99;
 }
 
 header .center {

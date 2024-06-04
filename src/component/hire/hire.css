@@ -1,0 +1,41 @@
+.hire .center {
+    display: block;
+    padding: 0 5rem;
+}
+
+.hire .center > h1{
+    color: var(--color-bg-variant);
+    text-align: center;
+}
+
+.hire .center > p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.hire .center .gallery {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hire .center .gallery > p{
+    margin-top: 1rem
+}
+.hire .center .gallery span{
+    display: block;
+    width: 20%;
+}
+.hire .center .stay-inform {
+    margin-top: 2rem;
+}
+.hire .center .stay-inform h1{
+    color: var(--color-bg-variant);
+}
+
+.hire .center .stay-inform button{
+    height: 2.7rem;
+    font-size: 0.955rem;
+    margin-top: 1rem;
+    background-color: var(--color-bg-variant);
+    color:var(--color-bg);
+}

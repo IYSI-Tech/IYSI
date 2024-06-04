@@ -1,0 +1,56 @@
+.partner-with-us {
+  display: block;
+}
+
+.partner-with-us .center {
+  padding: 2rem 5rem;
+  background-image: url(../../asset//images/banner-bg.webp);
+  background-size:cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: auto;
+  justify-content: center;
+  
+}
+
+.partner-with-us .center div:first-child {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-with-us .center div:first-child img {
+  border-radius: var(--border-radius-1);
+}
+
+.partner-with-us .center div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.partner-with-us .center div:last-child h1,.partner-with-us .center div:last-child p,.partner-with-us .center div:last-child h3{
+    color:var(--color-bg);
+  }
+.partner-with-us .center div:last-child p {
+font-weight: 200;
+}
+
+
+.partner-with-us .center div:last-child button {
+  align-self: self-start;
+  font-size: 0.955rem;
+  height: 2.8rem;
+  color: var(--color-bg-variant);
+  font-weight: 400;
+  background-color: var(--color-bg);
+}
+.partner-with-us .center div:last-child button svg{
+  margin: 0;
+  transition: margin var(--trans-duration);
+}
+.partner-with-us .center div:last-child button:hover svg{
+  margin-left: 0.5rem;
+}

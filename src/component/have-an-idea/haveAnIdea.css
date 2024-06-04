@@ -1,0 +1,23 @@
+.have-an-idea .center {
+   margin: 0 5rem;
+   padding: 3rem;
+   background-image: url(../../asset/images/banner-bg.webp);
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   border-radius: var(--border-radius-2);
+   background-position: left;
+   
+}
+
+.have-an-idea .center h1{
+    color: var(--color-bg);
+    width: 45%;
+    margin: auto;
+    font-weight: 400;
+}
+.have-an-idea .center button{
+    margin-top: 1rem;
+    background-color: var(--color-bg);
+    color: var(--color-bg-variant);
+}

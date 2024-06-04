@@ -1,0 +1,80 @@
+.clients {
+  background-color: var(--color-bg-variant-transparent2);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.clients .center {
+  margin: 0 5rem;
+  padding: 2rem 5rem;
+  display: block;
+  text-align: center;
+  background-color: var(--color-bg);
+}
+
+.clients .center > h1 {
+  color: var(--color-bg-variant);
+}
+
+.clients .center > p {
+  display: block;
+  width: 77%;
+  margin: 3rem auto;
+}
+
+.clients .center .client-section {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--color-text-grey-light);
+}
+.clients .center .client-section .profession {
+  position: relative;
+  top: -1.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1rem;
+  width: 100%;
+  border-top: 2px solid transparent;
+}
+.clients .center .client-section .profession:first-child {
+  justify-content: left;
+}
+
+.clients .center .client-section .profession:last-child {
+  justify-content: right;
+}
+
+.clients .center .client-section .profession:hover {
+  border-top: 2px solid var(--color-bg-variant);
+}
+
+.clients .center .client-section .prefession h1 {
+  color: var(--color-bg-variant);
+}
+
+.clients .center .client-section .profession .user {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-bg-variant-transparent2);
+}
+
+.clients .center .client-section .profession .user-icon {
+  color: var(--color-bg-variant);
+}
+
+.clients .center .client-section .profession .pro-user {
+  text-align: left;
+}
+
+.clients .center .client-section .profession .pro-user h1 {
+  font-size: 1.05rem;
+  margin: 0.2rem 0;
+  color: var(--color-bg-variant);
+}
