@@ -1,0 +1,122 @@
+.featuredEvents .center {
+  display: block;
+  text-align: center;
+}
+
+.featuredEvents .center > h1 {
+  color: var(--color-bg-variant);
+}
+
+.featuredEvents .center .featured-article {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  width: 100%;
+  padding: 0 5rem;
+  gap: 3rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.featuredEvents .center .featured-article .highlight .highlight-sub,
+.featuredEvents .center .featured-article .events-container .events {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-2);
+  border: 1px solid var(--color-black-transparent-2);
+  padding: 2rem;
+  width: 100%;
+}
+
+.featuredEvents .center .featured-article .highlight h1 {
+  letter-spacing: unset;
+  font-size: 1.3rem;
+  color: var(--color-bg-variant-light);
+}
+
+.highlight ul {
+  margin-top: 1rem;
+}
+
+.highlight li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0;
+}
+
+.featuredEvents .center .featured-article .highlight li .highlight-icon {
+  color: var(--color-bg-variant-light);
+}
+
+.featuredEvents .center .featured-article .events-container .events {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.featuredEvents .center .featured-article .events-container .events > span {
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--color-bg);
+  background-color: var(--color-bg-variant);
+  cursor: unset;
+}
+
+.featuredEvents
+  .center
+  .featured-article
+  .events-container
+  .events
+  .event-sub-1
+  > h1 {
+  font-size: 1.5rem;
+}
+.featuredEvents
+  .center
+  .featured-article
+  .events-container
+  .events
+  .event-sub-2
+  > h1 {
+  font-size: 1.2rem;
+}
+.featuredEvents
+  .center
+  .featured-article
+  .events-container
+  .events
+  .event-sub-2
+  div
+  ul {
+  list-style: unset;
+  margin-left: 1rem;
+}
+.featuredEvents
+  .center
+  .featured-article
+  .events-container
+  .events
+  .event-sub-2
+  div
+  ul
+  li
+  span {
+  margin: 0 0.2rem 0 2rem;
+  font-weight: bold;
+}
+.featuredEvents
+  .center
+  .featured-article
+  .events-container
+  .events
+  .event-sub-2
+  div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.featuredEvents .center .featured-article .events-container .events div button {
+  height: 2.6rem;
+  background-color: var(--color-bg-variant-light);
+  color: var(--color-bg);
+  font-size: unset;
+}

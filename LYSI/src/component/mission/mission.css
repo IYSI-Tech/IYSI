@@ -1,0 +1,34 @@
+.mission .center {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.mission .center .mission-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.mission .center .mission-data .order1 {
+    order: -1;
+}
+.mission .center .mission-data .order2 {
+    order: -2;
+}
+
+.mission .center .mission-data .img {
+  padding: 2rem;
+}
+
+.mission .center .mission-data div h1 {
+  color: var(--color-bg-variant);
+}
+
+.mission .center .mission-data div a {
+  color: var(--color-bg);
+  font-weight: 400;
+  height: 3rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}

@@ -1,0 +1,52 @@
+.who-we-are .center{
+    width:100%;
+    display: block;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.who-we-are .center > h1{
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    color: var(--color-bg-variant);
+}
+
+.who-we-are .center > p{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.who-we-are .center .who-we-are-section {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    text-align: left;
+}
+
+.who-we-are .center .who-we-are-section .left{
+    display: block;
+    padding-right: 1rem;
+}
+.who-we-are .center .who-we-are-section .left .xpert{
+    margin-bottom: 4rem;
+}
+
+.who-we-are .center .who-we-are-section .right{
+    display: block;
+}
+.who-we-are .center .who-we-are-section .right h1{
+    color: var(--color-bg-variant);
+    margin-top:0;
+}
+
+.who-we-are .center .who-we-are-section .right div{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+

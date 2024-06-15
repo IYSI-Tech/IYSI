@@ -1,0 +1,76 @@
+.community-route-one .center {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  height: calc(100vh - 5rem);
+  align-items: center;
+  width: 100%;
+}
+
+.community-route-one .center .route-one-img {
+  background-image: url("../../asset/images/route-img-1.webp");
+  background-size: cover;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.community-route-one .center .get-in-touch {
+  display: block;
+  background-color: var(--color-bg);
+  width: 429px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 1.7rem;
+  margin: auto 3rem;
+  box-shadow: var(--box-shadow);
+}
+
+.community-route-one .center .get-in-touch form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--color-black);
+}
+.community-route-one .center .get-in-touch h1 {
+  margin-top: 0;
+  font-weight: bolder;
+}
+
+.community-route-one .center .get-in-touch form input,
+.community-route-one .center .get-in-touch form select {
+  height: 2.8rem;
+  border-radius: var(--border-radius-2);
+  padding: 10px;
+  border: 1px solid var(--color-black-transparent-2);
+}
+
+.community-route-one .center .get-in-touch form select {
+  border: none;
+  width: 100%;
+}
+
+.community-route-one .center .get-in-touch form .select-container {
+  padding-right: 1rem;
+  border-radius: var(--border-radius-2);
+  border: 1px solid var(--color-black-transparent-2);
+}
+
+.community-route-one
+  .center
+  .get-in-touch
+  form
+  .react-tel-input
+  .flag-dropdown {
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-black-transparent-2);
+}
+
+.community-route-one .center .get-in-touch form .react-tel-input .form-control {
+  width: calc(100% - 50px);
+  left: 50px;
+}
+.community-route-one .center .get-in-touch form label {
+  font-size: 0.8rem;
+}
