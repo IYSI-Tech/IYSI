@@ -174,12 +174,22 @@
 
 /* ================ TABLET =============== */
 @media only screen and (max-width: 868px) {
+  .analysis .center {
+    margin: 0 2rem;;
 }
 
+.swot-text {
+  text-align: center;
+}
+
+.swot-form form {
+  width: unset;
+}
+}
 /* ================ MOBILE DEVICES =============== */
 @media only screen and (max-width: 480px) {
   .analysis .center {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   .analysis .center > h1 {
@@ -200,6 +210,7 @@
 
   .swot-text h1 {
     font-size: 1.3rem;
+    margin: 0;
   }
 
   .swot-text .swot-arcordion {

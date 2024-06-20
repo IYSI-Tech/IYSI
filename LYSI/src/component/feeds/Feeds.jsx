@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { PiChalkboardTeacher } from "react-icons/pi";
 import { feedsData } from './Data';
 import { IoIosTrendingUp } from "react-icons/io"

@@ -53,3 +53,27 @@
   color: var(--color-bg);
   margin-left: 0.5rem;
 }
+
+
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 700px) {
+  .upcoming-events .center {
+    padding: 2rem;
+  }
+
+  .upcoming-events .center article {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events .center p {
+    width: unset;
+}
+}/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .upcoming-events .center {
+    padding: 2rem 1rem;
+  }
+}
+
+

@@ -57,13 +57,13 @@ header nav ul {
   overflow: hidden;
 }
 header nav ul:last-child {
-  display: grid;
+  display: none;
 }
 header nav ul li {
   display: inline-block;
 }
 
-header nav ul li .a {
+header nav ul li .a, header ul li .ab{
   display: block;
   text-align: center;
   padding: 0.6rem 1.2rem;
@@ -72,30 +72,19 @@ header nav ul li .a {
   border-radius: var(--border-radius-2);
 }
 
-header nav ul:last-child li .a {
+header nav ul:last-child li,  header ul li .ab {
   background-color: var(--color-bg-variant);
   color: var(--color-bg);
-}
-
-/* ================ LARGE SCREEN (DESKTOP) =============== */
-
-@media only screen and (max-width: 1200px) {
-}
-
-/* ================ LAPTOP =============== */
-
-@media only screen and (max-width: 1024px) {
-  header nav {
-    width: 38.6rem;
-  }
 }
 
 /* ================ TABLET =============== */
 @media only screen and (max-width: 868px) {
   .header .center .btn {
     display: flex;
+    height: unset;
+  } .header .center .btn:hover svg{
+    margin: unset;
   }
-
   header nav ul:first-child {
     display: block;
     position: fixed;
@@ -129,6 +118,11 @@ header nav ul:last-child li .a {
   header nav ul:first-child a:hover {
     background-color: var(--color-bg-variant-light);
     color: var(--color-bg);
+  }
+
+  header ul {
+    margin-left: auto;
+    margin-right: 1rem;
   }
 }
 

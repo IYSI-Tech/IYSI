@@ -8,9 +8,9 @@ const Hire = () => {
   return (
     <div className="container hire" id="hire">
       <div className="center">
-        <h1>Hire Top Talent with NextEd</h1>
+        <h1>Hire Top Talent with LYSI</h1>
         <p>
-          At NextEd, we connect forward-thinking employers with skilled
+          At LYSI, we connect forward-thinking employers with skilled
           architects ready to make an impact. Our graduates are not just
           equipped with theoretical knowledge but are trained in practical,
           industry-relevant skills, making them valuable assets to any
@@ -25,7 +25,7 @@ const Hire = () => {
           <p>
           Governments and organizations with the desire to create opportunities
           and build a future where architecture thrives on creativity,
-          inclusivity, and excellence can do that with NextEd.
+          inclusivity, and excellence can do that with LYSI.
         </p>
         </div>
         

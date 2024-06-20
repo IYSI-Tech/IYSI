@@ -77,18 +77,20 @@
   border-radius: var(--border-radius-2);
   padding: 10px;
   border: 1px solid var(--color-black-transparent-2);
-}
-
-.banner .center .get-in-touch form select {
-  border: none;
   width: 100%;
 }
 
-.banner .center .get-in-touch form .select-container {
-  padding-right: 1rem;
-  border-radius: var(--border-radius-2);
-  border: 1px solid var(--color-black-transparent-2);
+.banner .center .get-in-touch form select {
+  width: 100%;
+  appearance: none;
+  background-image: url("../../asset/icon/dropdown.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: right center;
+  background-size: contain;
+  background-size: contain;
 }
+
 .banner .center .get-in-touch button.btn {
   height: 2.6rem;
   width: fit-content;
@@ -98,6 +100,8 @@
 .bg-variant {
   background-color: var(--color-bg-variant);
 }
+
+
 
 /* ================ LARGE SCREEN (DESKTOP) =============== */
 
@@ -137,7 +141,7 @@
 /* ================ MOBILE DEVICES =============== */
 @media only screen and (max-width: 480px) {
   .banner .center {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .banner-txt > * {

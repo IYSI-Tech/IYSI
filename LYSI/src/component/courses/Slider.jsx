@@ -1,4 +1,4 @@
-import React from "react";
+
 import { courses } from "./Data";
 import a from "../../asset/images/sand-timer.webp";
 import LazyLoading from "../../template/Lazyloading";

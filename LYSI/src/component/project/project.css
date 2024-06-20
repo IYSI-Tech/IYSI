@@ -141,30 +141,25 @@
   width: 1.7rem;
 }
 
-/* ================ LARGE SCREEN (DESKTOP) =============== */
-
-@media only screen and (max-width: 1200px) {
-}
-
-/* ================ LAPTOP =============== */
-
-@media only screen and (max-width: 1024px) {
-}
-
 /* ================ TABLET =============== */
 @media only screen and (max-width: 868px) {
   .project .center {
     display: grid;
     grid-template-columns: 100%;
     gap: 5%;
-    margin: 0 3rem;
+    margin: 0 2rem;
+    padding: 0;
   }
+
+  .authentication-container .authentication {
+    margin: 0 1rem;
+}
 }
 
 /* ================ MOBILE DEVICES =============== */
 @media only screen and (max-width: 480px) {
   .project .center {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   .hand-on-project .slide .carousel {
@@ -198,4 +193,7 @@
     margin: 0;
     box-shadow: var(--box-shadow-2);
   }
+  .authentication-container .carousel-container {
+    padding: 2rem 0;
+}
 }

@@ -21,3 +21,27 @@
     background-color: var(--color-bg);
     color: var(--color-bg-variant);
 }
+
+@media only screen and (max-width: 868px) {
+    
+.have-an-idea .center {
+    margin: 0 2rem;
+}
+
+.have-an-idea .center h1 {
+    width: 90%;
+}
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+    .have-an-idea .center {
+        margin: 0 1rem;
+        padding: 2rem;
+    }
+    
+    .have-an-idea .center h1 {
+        width: 100%;
+    }
+}
+

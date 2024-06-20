@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./footer.css";
 import Lazyloading from "../../template/Lazyloading";
 import a from "../../asset/images/logo64.webp";
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="logo-container">
             <a className="logo" href="/">
               <Lazyloading className="logo-img" src={a} alt="logo" />
-              <p>NextED</p>
+              <p>LYSI</p>
             </a>
           </div>
           <nav className="nav-link">
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <div className="footer-end">
           <p>
-            Copyright &#169; 2024 NextEd developer | All Rights Reserved |{" "}
+            Copyright &#169; 2024 LYSI developer | All Rights Reserved |{" "}
             <a href="/">Terms and Conditions</a> |{" "}
             <a href="/">Privacy Policy</a>
           </p>

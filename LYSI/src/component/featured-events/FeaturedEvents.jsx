@@ -21,7 +21,7 @@ const FeaturedEvents = () => {
         <div className="featured-article">
           <section className="highlight">
             <div className="highlight-sub">
-              <h1>Next ED Highlights</h1>
+              <h1>LYSI Highlights</h1>
               <ul>
                 {courseFee.map(({ a, p }, index) => {
                   const Iconss = icons[a];

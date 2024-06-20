@@ -1,17 +1,15 @@
 .community-route-one .center {
   display: grid;
   grid-template-columns: 1fr auto;
-  height: calc(100vh - 5rem);
   align-items: center;
   width: 100%;
 }
 
 .community-route-one .center .route-one-img {
   background-image: url("../../asset/images/route-img-1.webp");
-  background-size: cover;
+  background-size: contain;
   height: 100%;
-  object-fit: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -38,22 +36,62 @@
 }
 
 .community-route-one .center .get-in-touch form input,
-.community-route-one .center .get-in-touch form select {
+.community-route-one .center .get-in-touch form select,
+.community-route-one .center .get-in-touch form textarea,
+.community-route-one .center .get-in-touch form .checkbox,
+.community-route-one .center .get-in-touch form .radio {
+  resize: none;
   height: 2.8rem;
   border-radius: var(--border-radius-2);
   padding: 10px;
   border: 1px solid var(--color-black-transparent-2);
-}
-
-.community-route-one .center .get-in-touch form select {
-  border: none;
   width: 100%;
 }
 
-.community-route-one .center .get-in-touch form .select-container {
-  padding-right: 1rem;
-  border-radius: var(--border-radius-2);
+.community-route-one .center .get-in-touch form select {
+  appearance: none;
+  background-image: url("../../asset/icon/dropdown.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: right center;
+  background-size: contain;
+  background-size: contain;
+}
+
+.community-route-one .center .get-in-touch form .checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
   border: 1px solid var(--color-black-transparent-2);
+  height: unset;
+}
+
+.community-route-one .center .get-in-touch form .checkbox label,
+.community-route-one .center .get-in-touch form .radio label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.community-route-one .center .get-in-touch form .checkbox label input {
+  width: unset;
+  height: unset;
+}
+
+.community-route-one .center .get-in-touch form .radio {
+  height: unset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.community-route-one .center .get-in-touch form .radio input{
+  width: unset;
+  height: unset;
+}
+
+.community-route-one .center .get-in-touch form button{
+  color: var(--color-bg);
 }
 
 .community-route-one
@@ -71,6 +109,35 @@
   width: calc(100% - 50px);
   left: 50px;
 }
-.community-route-one .center .get-in-touch form label {
-  font-size: 0.8rem;
+.community-route-one .center .get-in-touch form label,.community-route-one .center .get-in-touch form div p {
+  font-size: 0.9rem;
 }
+
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+  .community-route-one .center {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+  .community-route-one .center .get-in-touch {
+    margin: auto;
+    min-width: 400px;
+}
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+
+  .community-route-one .center {
+    padding: 0 1rem;
+  }
+  .community-route-one .center .get-in-touch {
+    width:100%;
+    min-width: auto;
+}
+
+
+}
+
+

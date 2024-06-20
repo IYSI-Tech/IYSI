@@ -14,7 +14,7 @@ const Header = () => {
       <div className="center">
         <Link className="logo a" href="/">
           <LazyLoading className="logo-img" src={a} alt="logo" />
-          <p>NextED</p>
+          <p>LYSI</p>
         </Link>
         <nav>
           <ul className={`${isHide && "hide"}`}>
@@ -40,6 +40,13 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <ul>
+            <li>
+              <Link className="ab" to="CommunityRouteOne">
+                Join Community
+              </Link>
+            </li>
+        </ul>
         <div className="btn" onClick={() => setIsHide(!isHide)}>
           {isHide ? <MdOutlineMenu size={28} /> : <RxCross1 size={28} />}
         </div>

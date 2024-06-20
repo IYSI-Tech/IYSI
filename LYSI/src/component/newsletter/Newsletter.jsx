@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import "./newsletter.css";
 import a from "../../asset/images/email.webp";
 import Lazyloading from "../../template/Lazyloading";
+import Aos from "aos";
 
 const Newsletter = () => {
+
+  useEffect(() => {
+    Aos.init();
+  }, [])
+
   const [formData, setFormData] = useState({
+    email: "",
+  });
+
+  const [errors, setErrors] = useState({
     email: "",
   });
 
@@ -15,13 +25,14 @@ const Newsletter = () => {
       ...formData,
       [name]: value,
     });
+
+    setErrors({ ...errors, [name]: "" });
   };
 
   const handleSubmit = async () => {
-
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/newsletter",
+        "/api/newsletter",
         formData,
         {
           headers: {
@@ -33,6 +44,16 @@ const Newsletter = () => {
       alert("Okay");
       // console.log("Form Data", formData);
     } catch (error) {
+      if (error.response.data.errors) {
+        const serverErrors = error.response.data.errors;
+        setErrors({
+          email: serverErrors.email ? serverErrors.email.join("") : "",
+        });
+      } else {
+        setErrors({
+          email: "",
+        });
+      }
       console.error("Error submitting data:", error);
     }
   };
@@ -40,26 +61,32 @@ const Newsletter = () => {
   return (
     <div className="container newsletter">
       <div className="center">
-        <div>
+        <div data-aos="fade-right" data-aos-once="true">
           <Lazyloading src={a} alt="email" />
           <div className="email-txt">
             <h1>Subscribe tou our newsletter</h1>
             <p>
               Stay updated with the latest news, events, and training programs
-              from NextEd by subscribing to our newsletter.
+              from LYSI by subscribing to our newsletter.
             </p>
           </div>
         </div>
         <div>
-          <div className="subscribe-input">
+          <form
+            className={errors.email ? "margin-danger" : "undefined"}
+            onSubmit={handleSubmit}
+          >
             <input
               type="email"
               id="email"
+              required
+              autoComplete="true"
               onChange={handleChange}
               placeholder="enter your email address"
             />
-            <button onClick={handleSubmit}> Subscribe</button>
-          </div>
+            <button type="submit"> Subscribe</button>
+          </form>
+          {errors.email && <span className="er">{errors.email}</span>}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import ProjectSlider from "./ProjectSlider";
 import AuthenticationSlider from "./AuthenticationSlider";
 import "./project.css";

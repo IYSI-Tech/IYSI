@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Homepage from './routes/Homepage';
 import CommunityRouteOne from './component/Route-one/CommunityRouteOne.jsx';
 import CommunityRouteTwo from './component/Route-two/CommunityRouteTwo.jsx';
-'./'
+import 'aos/dist/aos.css';
 
 const router = createBrowserRouter([
   {

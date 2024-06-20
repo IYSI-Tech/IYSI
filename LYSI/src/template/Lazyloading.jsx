@@ -1,9 +1,9 @@
 import LazyLoad from 'react-lazy-load'
 
-const Lazyloading = ({className, src, alt}) => {
+const Lazyloading = (item) => {
   return (
     <LazyLoad>
-        <img src={src} alt={alt} className={className}/>
+        <img src={item.src} alt={item.alt} className={`${item.className} lazyloading`}/>
     </LazyLoad>
   )
 }

@@ -78,3 +78,50 @@
   margin: 0.2rem 0;
   color: var(--color-bg-variant);
 }
+
+
+
+/* ================ LARGE SCREEN (DESKT OP) =============== */
+
+@media only screen and (max-width: 1200px) {
+}        
+/* ================ LAPTOP =============== */
+@media only screen and (max-width:  1024px) {
+
+}
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+
+  .clients .center {
+    margin: 0 2rem;
+    padding: 2rem;
+  }
+
+  .clients .center > p {
+    width: unset;
+}
+
+.clients .center .client-section {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients .center .client-section .profession:first-child,.clients .center .client-section .profession:last-child  {
+  justify-content: center;
+}
+
+}
+
+
+/* ================ MOBILE DEVICES =============== */
+
+
+@media only screen and (max-width: 480px) {
+
+  .clients .center {
+    margin: 0 1rem;
+    padding: 2rem;
+}
+
+}

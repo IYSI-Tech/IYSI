@@ -53,24 +53,6 @@
 }
 
 
-/* ================ LARGE SCREEN (DESKTOP) =============== */
-
-@media only screen and (max-width: 1200px) {
-
-    .feeds .center > div:last-child{
-        width: 260.2px;
-    }
-}
-
-
-
-/* ================ LAPTOP =============== */
-
-@media only screen and (max-width: 1024px) {
-    
-   
-}
-
 
 /* ================ TABLET =============== */
 @media only screen and (max-width: 868px) {

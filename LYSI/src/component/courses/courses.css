@@ -84,18 +84,17 @@
   padding: 1.2rem 1.5rem;
 }
 
-/* ================ LARGE SCREEN (DESKTOP) =============== */
-
-@media only screen and (max-width: 1200px) {
-}
-
-/* ================ LAPTOP =============== */
-
-@media only screen and (max-width: 1024px) {
-}
 
 /* ================ TABLET =============== */
 @media only screen and (max-width: 868px) {
+  .course .center {
+    padding: 0 2rem;
+  }
+
+
+  .course .center .carousel {
+    margin:0;
+  }
 }
 
 /* ================ MOBILE DEVICES =============== */
@@ -113,7 +112,7 @@
 }
 
 .course .center .carousel {
-  margin: 2rem 1rem;
+  margin: 2rem 0;
 }
 
 }

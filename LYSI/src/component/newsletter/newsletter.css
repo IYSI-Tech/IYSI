@@ -38,7 +38,7 @@
     color: var(--color-bg);
 }
 
-.newsletter .center .subscribe-input {
+.newsletter .center form {
     background-color: var(--color-bg);
     display: flex;
     justify-content: space-between;
@@ -46,11 +46,11 @@
     padding: 0.5rem;
     border-radius: var(--border-radius-2);
 }
-.newsletter .center .subscribe-input input{
+.newsletter .center form input{
     width: 100%;
     padding-left: 0.5rem;
 }
-.newsletter .center .subscribe-input button{
+.newsletter .center form button{
     height: 2rem;
     font-size: 0.8rem;
     font-weight: 300;
@@ -58,4 +58,28 @@
     color: var(--color-bg);
 }
 
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+    .newsletter .center {
+        margin: 0 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .newsletter .center div .email-txt p {
+        width: 100%;
+    }
+    .newsletter .center div:last-child{
+        width: 100%;
+    }.newsletter .center div:last-child form{
+        width: 100%;
+    }
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+    .newsletter .center {
+        margin: 0 1rem;
+    }
+}
 

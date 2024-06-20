@@ -51,3 +51,27 @@
   font-style: unset;
   text-decoration: underline;
 }
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+  .footer .center {
+    display: block;
+    margin: 0 2rem;
+  }
+  .footer .center .footer-sub {
+    flex-direction: column;
+    gap: 1rem;
+}
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .footer .center {
+    margin: 0 1rem;
+  }
+}
+
+
+
+
+

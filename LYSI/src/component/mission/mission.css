@@ -32,3 +32,38 @@
   margin-top: 1rem;
   font-size: 1rem;
 }
+
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+  .mission .center {
+    gap:1rem;
+    padding: 0 2rem;
+} .mission .center .mission-data {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.mission .center .mission-data .img {
+  padding: unset;
+}
+
+.mission .center .mission-data .order1 {
+  order: unset;
+}
+}
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .mission .center {
+    padding: 0 1rem;
+}
+
+.mission .center .mission-data div h1 {
+  color: var(--color-bg-variant);
+  margin-top: 0;
+}
+
+.mission .center .mission-data:last-child {
+  gap: 0;
+}
+}

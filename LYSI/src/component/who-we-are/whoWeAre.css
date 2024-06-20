@@ -1,52 +1,81 @@
-.who-we-are .center{
-    width:100%;
-    display: block;
-    text-align: center;
-    padding: 0 5rem;
+.who-we-are .center {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0 5rem;
 }
 
-.who-we-are .center > h1{
-    font-size: 0.8rem;
-    letter-spacing: 0.2rem;
-    color: var(--color-bg-variant);
+.who-we-are .center > h1 {
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  color: var(--color-bg-variant);
 }
 
-.who-we-are .center > p{
-    font-size: 2rem;
-    font-weight: bolder;
+.who-we-are .center > p {
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 .who-we-are .center .who-we-are-section {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    text-align: left;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  text-align: left;
 }
 
-.who-we-are .center .who-we-are-section .left{
-    display: block;
-    padding-right: 1rem;
+.who-we-are .center .who-we-are-section .left {
+  display: block;
+  padding-right: 1rem;
 }
-.who-we-are .center .who-we-are-section .left .xpert{
-    margin-bottom: 4rem;
-}
-
-.who-we-are .center .who-we-are-section .right{
-    display: block;
-}
-.who-we-are .center .who-we-are-section .right h1{
-    color: var(--color-bg-variant);
-    margin-top:0;
+.who-we-are .center .who-we-are-section .left .xpert {
+  margin-bottom: 4rem;
 }
 
-.who-we-are .center .who-we-are-section .right div{
+.who-we-are .center .who-we-are-section .right {
+  display: block;
+}
+.who-we-are .center .who-we-are-section .right h1,
+.who-we-are .center .who-we-are-section .left h1 {
+  color: var(--color-bg-variant);
+  margin-top: 0;
+}
+
+.who-we-are .center .who-we-are-section .right div {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+  .who-we-are .center {
+    padding: 0 2rem;
+  }
+  .who-we-are .center .who-we-are-section {
+    grid-template-columns: 1fr;
+  }
+  .who-we-are .center .who-we-are-section .right {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-top: 3rem;
+    flex-direction: column;
+}
+  .who-we-are .center .who-we-are-section .right div {
+    margin-top: 1rem;
+}
+.who-we-are .center .who-we-are-section .left .xpert {
+  margin-bottom: 3rem;
+}
 }
 
+/* ================ MOBILE DEVICES =============== */
 
+@media only screen and (max-width: 480px) {
+  .who-we-are .center .who-we-are-section .right div {
+    display: block;
+}
 
+.who-we-are .center {
+  padding: 0 1rem;
+}
 
+}
