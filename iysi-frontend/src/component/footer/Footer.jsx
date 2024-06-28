@@ -1,0 +1,62 @@
+
+import "./footer.css";
+import Lazyloading from "../../template/Lazyloading";
+import a from "../../asset/images/logo64.webp";
+import { FaFacebook, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+
+const Footer = () => {
+  return (
+    <div className="footer" id="contact-us">
+      <div className="center">
+        <div className="footer-sub">
+          <div className="logo-container">
+            <a className="logo" href="/">
+              <Lazyloading className="logo-img" src={a} alt="logo" />
+              <p>LYSI</p>
+            </a>
+          </div>
+          <nav className="nav-link">
+            <ul>
+              <li>
+                <a href="/#home">Home</a>
+              </li>
+              <li>
+                <a href="/#about-us">About Us</a>
+              </li>
+              <li>
+                <a href="/events">Events</a>
+              </li>
+              <li>
+                <a href="/blogs">Blogs</a>
+              </li>
+              <li>
+                <a href="/#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <nav className="icon-link">
+            <a href="https://www.facebook.com/profile.php?id=61560965086958">
+              <FaFacebook />
+            </a>
+            <a href="https://www.instagram.com/iysi_tech?igsh=YzljYTk1ODg3Zg==">
+              <AiFillInstagram />
+            </a>
+            <a href="https://www.linkedin.com/company/iysi">
+              <FaLinkedinIn />
+            </a>
+          </nav>
+        </div>
+        <div className="footer-end">
+          <p>
+            Copyright &#169; 2024 LYSI developer | All Rights Reserved |{" "}
+            <a href="/">Terms and Conditions</a> |{" "}
+            <a href="/">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
