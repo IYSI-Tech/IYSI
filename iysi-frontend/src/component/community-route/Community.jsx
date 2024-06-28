@@ -119,6 +119,8 @@ const Community = () => {
       alert("Your request is submitted");
       // console.log("Form Data", formData);
       e.target.reset();
+      window.open('https://t.me/IysiArchi', '_blank');
+      
     } catch (error) {
       if (error.response.data.errors) {
         const serverErrors = error.response.data.errors;
@@ -225,9 +227,8 @@ const Community = () => {
                 type="tel"
                 placeholder="Your phone number"
                 containerClass={errors.mobile ? "margin-danger" : "undefined"}
-                name="mobile"
                 onChange={handleChangeInput}
-                inputProps={{ required: true }}
+                inputProps={{ required: true, name:"mobile"}}
                 autoComplete="true"
               />
               {errors.mobile && <span className="er">{errors.mobile}</span>}

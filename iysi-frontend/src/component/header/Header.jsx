@@ -33,7 +33,7 @@ const Header = () => {
           </ul>
           <ul>
             <li>
-              <Link className="a" to="CommunityRouteOne">
+              <Link className="a" to="community">
                 Join Community
               </Link>
             </li>
