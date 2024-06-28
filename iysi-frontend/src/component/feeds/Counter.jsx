@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 
-const Counter = ({ className, h1, sign }) => {
+const Counter = (items, index) => {
     const [isVisible, setIsvisible] = useState(false);
     const elementRef = useRef(null);
     
@@ -12,17 +12,17 @@ const Counter = ({ className, h1, sign }) => {
     };
   return (
     <ScrollTrigger
-      onEnter={onEnterViewport}
+      onEnter={onEnterViewport} index={index}
     >
-      {!isNaN(h1) ? (
+      {!isNaN(items.h1) ? (
         <h1 ref={elementRef}>
-          {isVisible && <CountUp className={className} start={0} end={h1} />}
-          {sign}
+          {isVisible && <CountUp className={items.className} start={0} end={items.h1} />}
+          {items.sign}
         </h1>
       ) : (
-        <h1 className={className}>
-          {h1}
-          {sign}
+        <h1 className={items.className}>
+          {items.h1}
+          {items.sign}
         </h1>
       )}
     </ScrollTrigger>

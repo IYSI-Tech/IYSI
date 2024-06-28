@@ -5,7 +5,7 @@ import b from '../../asset/images/mission2.webp'
 export const Data = [
   {
     h1: "Mission",
-    p: "At LYSI, we are dedicated to empowering architects and architectural enthusiasts with specialized training programs, fostering a supportive and inclusive community, and advocating for greater diversity and inclusion within the architecture industry. Our mission is to bridge the gap between academic learning and real-world applications by providing the skills and knowledge needed to excel in modern architectural practice.",
+    p: "At IYSI, we are dedicated to empowering architects and architectural enthusiasts with specialized training programs, fostering a supportive and inclusive community, and advocating for greater diversity and inclusion within the architecture industry. Our mission is to bridge the gap between academic learning and real-world applications by providing the skills and knowledge needed to excel in modern architectural practice.",
     img: a,
     alt:"mission1"
   },

@@ -24,10 +24,10 @@ const Footer = () => {
                 <a href="/#about-us">About Us</a>
               </li>
               <li>
-                <a href="/events">Events</a>
+                <a href="/#events">Events</a>
               </li>
               <li>
-                <a href="/blogs">Blogs</a>
+                <a href="/#blogs">Blogs</a>
               </li>
               <li>
                 <a href="/#contact-us">Contact Us</a>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         <div className="footer-end">
           <p>
-            Copyright &#169; 2024 LYSI developer | All Rights Reserved |{" "}
+            Copyright &#169; 2024 IYSI developer | All Rights Reserved |{" "}
             <a href="/">Terms and Conditions</a> |{" "}
             <a href="/">Privacy Policy</a>
           </p>

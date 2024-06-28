@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const UpcomingEvents = () => {
   return (
-    <div className="container upcoming-events" id="events">
+    <div className="container upcoming-events" id="blogs">
       <div className="center">
         <h1  data-aos="zoom-in" data-aos-once="true">Upcoming Events</h1>
         <p data-aos="zoom-in" data-aos-once="true">
