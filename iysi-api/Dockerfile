@@ -8,7 +8,7 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 # Install php extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
-    install-php-extensions mbstring pdo_mysql zip exif pcntl gd memcached
+    install-php-extensions mbstring pdo_mysql pdo_pgsql pgsql zip exif pcntl gd memcached
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -24,12 +24,13 @@ RUN apt-get update && apt-get install -y \
     curl \
     lua-zlib-dev \
     libmemcached-dev \
-    nginx
+    nginx \
+    postgresql-client
 
 # Install supervisor
 RUN apt-get install -y supervisor
 
-#install node
+# Install node
 RUN curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
 RUN apt-get install -y nodejs
@@ -47,7 +48,7 @@ RUN useradd -u 1000 -ms /bin/bash -g www www
 # Copy code to /var/www
 COPY --chown=www:www-data ./ /var/www
 
-# add root to www group
+# Add root to www group
 RUN chmod -R ug+w /var/www/storage
 
 # Copy nginx/php/supervisor configs
