@@ -45,7 +45,7 @@ RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy code to /var/www
-COPY --chown=www:www-data ../lysi-api /var/www
+COPY --chown=www:www-data ../iysi-api /var/www
 
 # add root to www group
 RUN chmod -R ug+w /var/www/storage
