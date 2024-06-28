@@ -7,7 +7,7 @@ import Homepage from './routes/Homepage';
 import Newsletter from './component/newsletter-route/Newsletter.jsx';
 import Community from './component/community-route/Community.jsx';
 import Contact from './component/contact-route/Contact.jsx';
-import Register from './component/register-route/Register.jsx'
+import Register from './component/register-route/Register.jsx';
 import 'aos/dist/aos.css';
 
 const router = createBrowserRouter([
