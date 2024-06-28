@@ -1,5 +1,4 @@
 import "./analysis.css";
-import Form from "./Form";
 import { data } from "./Data";
 import Swot from "./Swot";
 import { useEffect } from "react";
@@ -23,7 +22,7 @@ const Analysis = () => {
               SketchUp, Rhino: 3ds Max, and BIM software. We will offer
               workshops, seminars, and hands-on training sessions to provide
               students with practical, real-world experience. In addition to
-              training programs, LYSI Hub will provide professional
+              training programs, IYSI Hub will provide professional
               architectural services, including design consultations, drafting,
               modeling, and project management.
             </p>

@@ -19,13 +19,13 @@ const icons = {
 
 const FeaturedEvents = () => {
   return (
-    <div className="featuredEvents container" id="featuredEvents">
+    <div className="featuredEvents container" id="events">
       <div className="center">
         <h1>Featured Events</h1>
         <div className="featured-article">
           <section className="highlight">
             <div className="highlight-sub">
-              <h1>LYSI Highlights</h1>
+              <h1>IYSI Highlights</h1>
               <ul>
                 {courseFee.map(({ a, p }, index) => {
                   const Iconss = icons[a];

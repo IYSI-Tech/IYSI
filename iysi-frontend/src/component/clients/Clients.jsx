@@ -14,7 +14,7 @@ const Clients = () => {
           What our clients have to say
         </h1>
         <p data-aos="zoom-in" data-aos-once="true">
-          LYSI has provided me with invaluable training and resources that have
+        IYSI has provided me with invaluable training and resources that have
           significantly enhanced my skills and confidence as an architect. the
           supportive community and advocacy for women in architecture are truly
           inspiring.
