@@ -55,12 +55,9 @@
 
 .banner .center .get-in-touch {
   display: block;
-  background-color: var(--color-bg);
   width: 429px;
-  height: fit-content;
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: var(--box-shadow);
 }
 
 .banner .center .get-in-touch form {
@@ -93,7 +90,7 @@
 
 .banner .center .get-in-touch button.btn {
   height: 2.6rem;
-  width: fit-content;
+  margin-right: auto;
   color: var(--color-bg);
 }
 

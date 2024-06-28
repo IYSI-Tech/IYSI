@@ -18,7 +18,7 @@ const Connect = () => {
         <li><IoIosCheckmarkCircle className="icon" size="20"/><span>Knowledge Sharing</span></li>
         <li><IoIosCheckmarkCircle className="icon" size="20"/><span>Inspiration and Innovation</span></li>
       </ul>
-      <Link className='btn' to="CommunityRouteOne">
+      <Link className='btn' to="register">
               register now <GoArrowRight size="20" />
             </Link>
       </div>

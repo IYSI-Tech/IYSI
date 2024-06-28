@@ -26,11 +26,13 @@ export const stayInform = [
   {
     h1: "Stay Informed",
     p: "Subscribe to our newsletter for updates on upcoming events, training programs, and advocacy campaigns. Stay connected with the latest news and developments in the world of architecture.",
-    buttonTxt:"Subcribe"
+    buttonTxt:"Subcribe",
+    linkPath:"newsletter"
   },
   {
     h1: "Support Us",
     p: " Your support helps us continue our mission to empower architects and promote diversity in the industry. Consider donating or sponsoring our programs to make a lasting impact on the future of architecture.",
-    buttonTxt:"Contact Us"
+    buttonTxt:"Contact Us",
+    linkPath:"contact-us"
   },
 ];

@@ -32,7 +32,7 @@
     color: var(--color-bg-variant);
 }
 
-.hire .center .stay-inform button{
+.hire .center .stay-inform .btn{
     height: 2.7rem;
     font-size: 0.955rem;
     margin-top: 1rem;

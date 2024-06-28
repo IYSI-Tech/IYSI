@@ -29,7 +29,7 @@ const PartnerWithUs = () => {
             opportunities and build a future where architecture thrives on
             creativity, inclusivity, and excellence can do that with LYSI.
           </p>
-          <Link to="CommunityRouteTwo" className="btn">
+          <Link to="contact-us" className="btn">
             Get in Touch <GoArrowRight size="20" />
           </Link>
         </div>

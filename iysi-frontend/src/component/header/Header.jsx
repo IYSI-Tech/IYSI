@@ -14,7 +14,6 @@ const Header = () => {
       <div className="center">
         <Link className="logo a" href="/">
           <LazyLoading className="logo-img" src={a} alt="logo" />
-          <p>LYSI</p>
         </Link>
         <nav>
           <ul className={`${isHide && "hide"}`}>
@@ -39,10 +38,11 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+        
         </nav>
         <ul>
             <li>
-              <Link className="ab" to="CommunityRouteOne">
+              <Link className="ab" to="community">
                 Join Community
               </Link>
             </li>

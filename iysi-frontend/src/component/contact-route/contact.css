@@ -1,0 +1,141 @@
+.contact .center {
+  background-image: url(../../asset/images/route-img-2.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+  
+  .contact .center .get-in-touch {
+    display: block;
+    background-color: var(--color-bg);
+    width: 429px;
+    border-radius: 10px;
+    padding: 1.7rem;
+    margin: auto 3rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .contact .center .get-in-touch form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--color-black);
+  }
+  .contact .center .get-in-touch h1 {
+    margin-top: 0;
+    font-weight: bolder;
+  }
+  
+  .contact .center .get-in-touch form input,
+  .contact .center .get-in-touch form select,
+  .contact .center .get-in-touch form textarea,
+  .contact .center .get-in-touch form .checkbox,
+  .contact .center .get-in-touch form .radio {
+    resize: none;
+    height: 2.8rem;
+    border-radius: var(--border-radius-2);
+    padding: 10px;
+    border: 1px solid var(--color-black-transparent-2);
+    width: 100%;
+  }
+  
+  .contact .center .get-in-touch form select {
+    appearance: none;
+    background-image: url("../../asset/icon/dropdown.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: right center;
+    background-size: contain;
+    background-size: contain;
+  }
+  
+  .contact .center .get-in-touch form .checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1rem;
+    border: 1px solid var(--color-black-transparent-2);
+    height: unset;
+  }
+  
+  .contact .center .get-in-touch form .checkbox label,
+  .contact .center .get-in-touch form .radio label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .contact .center .get-in-touch form .checkbox label input {
+    width: unset;
+    height: unset;
+  }
+  
+  .contact .center .get-in-touch form .radio {
+    height: unset;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact .center .get-in-touch form .radio input{
+    width: unset;
+    height: unset;
+  }
+  
+  .contact .center .get-in-touch form button{
+    color: var(--color-bg);
+  }
+  
+  .contact
+    .center
+    .get-in-touch
+    form
+    .react-tel-input
+    .flag-dropdown {
+    border-radius: var(--border-radius-2);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-black-transparent-2);
+  }
+  
+  .contact .center .get-in-touch form .react-tel-input .form-control {
+    width: calc(100% - 50px);
+    left: 50px;
+  }
+  .contact .center .get-in-touch form label,.contact .center .get-in-touch form div p {
+    font-size: 0.9rem;
+  }
+  
+  
+  /* ================ TABLET =============== */
+  @media only screen and (max-width: 868px) {
+    .contact .center {
+      grid-template-columns: 1fr;
+      padding: 0 2rem;
+    }
+    .contact .center .get-in-touch {
+      margin: auto;
+      min-width: 400px;
+  }
+  }
+  
+  /* ================ MOBILE DEVICES =============== */
+  @media only screen and (max-width: 480px) {
+  
+    .contact .center {
+      padding: 0 1rem;
+    }
+    .contact .center .get-in-touch {
+      width:100%;
+      min-width: auto;
+  }
+  
+  
+  }
+  
+  
+  

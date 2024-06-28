@@ -3,7 +3,7 @@ import "./hire.css";
 import { galleryImg, stayInform } from "./Data";
 import { GoArrowRight } from "react-icons/go";
 import Lazyloading from "../../template/Lazyloading";
-
+import {Link} from 'react-router-dom'
 const Hire = () => {
   return (
     <div className="container hire" id="about-us">
@@ -29,14 +29,14 @@ const Hire = () => {
         </p>
         </div>
         
-        {stayInform.map(({ h1, p, buttonTxt}, index) => {
+        {stayInform.map((items, index) => {
           return (
             <div className="stay-inform" key={index}>
-              <h1>{h1}</h1>
-              <p>{p}</p>
-              <button>
-                {buttonTxt} <GoArrowRight size="20" />
-              </button>
+              <h1>{items.h1}</h1>
+              <p>{items.p}</p>
+              <Link to={items.linkPath} className="btn">
+                {items.buttonTxt} <GoArrowRight size="20" />
+              </Link>
             </div>
           );
         })}

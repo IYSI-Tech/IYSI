@@ -3,6 +3,7 @@ import "./upcomingEvents.css";
 import { upcomingEvents } from "./Data";
 import Lazyloading from "../../template/Lazyloading";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const UpcomingEvents = () => {
   return (
@@ -32,9 +33,9 @@ const UpcomingEvents = () => {
                         {description}
                       </li>
                     </ul>
-                    <button>
+                    <Link className="btn" to="register">
                       Register your interest <GoArrowRight size="20" />
-                    </button>
+                    </Link>
                   </div>
                 </section>
               );

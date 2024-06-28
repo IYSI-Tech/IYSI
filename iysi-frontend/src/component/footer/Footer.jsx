@@ -2,7 +2,7 @@
 import "./footer.css";
 import Lazyloading from "../../template/Lazyloading";
 import a from "../../asset/images/logo64.webp";
-import { FaFacebook, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
@@ -13,7 +13,6 @@ const Footer = () => {
           <div className="logo-container">
             <a className="logo" href="/">
               <Lazyloading className="logo-img" src={a} alt="logo" />
-              <p>LYSI</p>
             </a>
           </div>
           <nav className="nav-link">

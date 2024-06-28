@@ -1,11 +1,11 @@
-.community-route-one .center {
+.community .center {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   width: 100%;
 }
 
-.community-route-one .center .route-one-img {
+.community .center .route-one-img {
   background-image: url("../../asset/images/route-img-1.webp");
   background-size: contain;
   height: 100%;
@@ -13,33 +13,33 @@
   background-repeat: no-repeat;
 }
 
-.community-route-one .center .get-in-touch {
+.community .center .get-in-touch {
   display: block;
   background-color: var(--color-bg);
   width: 429px;
-  height: fit-content;
   border-radius: 10px;
   padding: 1.7rem;
   margin: auto 3rem;
   box-shadow: var(--box-shadow);
+  margin-top: 1rem;
 }
 
-.community-route-one .center .get-in-touch form {
+.community .center .get-in-touch form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: var(--color-black);
 }
-.community-route-one .center .get-in-touch h1 {
+.community .center .get-in-touch h1 {
   margin-top: 0;
   font-weight: bolder;
 }
 
-.community-route-one .center .get-in-touch form input,
-.community-route-one .center .get-in-touch form select,
-.community-route-one .center .get-in-touch form textarea,
-.community-route-one .center .get-in-touch form .checkbox,
-.community-route-one .center .get-in-touch form .radio {
+.community .center .get-in-touch form input,
+.community .center .get-in-touch form select,
+.community .center .get-in-touch form textarea,
+.community .center .get-in-touch form .checkbox,
+.community .center .get-in-touch form .radio {
   resize: none;
   height: 2.8rem;
   border-radius: var(--border-radius-2);
@@ -48,7 +48,7 @@
   width: 100%;
 }
 
-.community-route-one .center .get-in-touch form select {
+.community .center .get-in-touch form select {
   appearance: none;
   background-image: url("../../asset/icon/dropdown.png");
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   background-size: contain;
 }
 
-.community-route-one .center .get-in-touch form .checkbox {
+.community .center .get-in-touch form .checkbox {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -68,33 +68,33 @@
   height: unset;
 }
 
-.community-route-one .center .get-in-touch form .checkbox label,
-.community-route-one .center .get-in-touch form .radio label {
+.community .center .get-in-touch form .checkbox label,
+.community .center .get-in-touch form .radio label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.community-route-one .center .get-in-touch form .checkbox label input {
+.community .center .get-in-touch form .checkbox label input {
   width: unset;
   height: unset;
 }
 
-.community-route-one .center .get-in-touch form .radio {
+.community .center .get-in-touch form .radio {
   height: unset;
   display: flex;
   justify-content: space-between;
 }
 
-.community-route-one .center .get-in-touch form .radio input{
+.community .center .get-in-touch form .radio input{
   width: unset;
   height: unset;
 }
 
-.community-route-one .center .get-in-touch form button{
+.community .center .get-in-touch form button{
   color: var(--color-bg);
 }
 
-.community-route-one
+.community
   .center
   .get-in-touch
   form
@@ -105,22 +105,22 @@
   border: 1px solid var(--color-black-transparent-2);
 }
 
-.community-route-one .center .get-in-touch form .react-tel-input .form-control {
+.community .center .get-in-touch form .react-tel-input .form-control {
   width: calc(100% - 50px);
   left: 50px;
 }
-.community-route-one .center .get-in-touch form label,.community-route-one .center .get-in-touch form div p {
+.community .center .get-in-touch form label,.community .center .get-in-touch form div p {
   font-size: 0.9rem;
 }
 
 
 /* ================ TABLET =============== */
 @media only screen and (max-width: 868px) {
-  .community-route-one .center {
+  .community .center {
     grid-template-columns: 1fr;
     padding: 0 2rem;
   }
-  .community-route-one .center .get-in-touch {
+  .community .center .get-in-touch {
     margin: auto;
     min-width: 400px;
 }
@@ -129,10 +129,10 @@
 /* ================ MOBILE DEVICES =============== */
 @media only screen and (max-width: 480px) {
 
-  .community-route-one .center {
+  .community .center {
     padding: 0 1rem;
   }
-  .community-route-one .center .get-in-touch {
+  .community .center .get-in-touch {
     width:100%;
     min-width: auto;
 }

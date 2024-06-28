@@ -12,7 +12,7 @@ const Courses = () => {
         <div className="course-gallery">
         <Slider />
         </div>
-        <Link className="btn" to="CommunityRouteOne">
+        <Link className="btn" to="register">
           Register Now <GoArrowRight size="20" />
         </Link>
       </div>

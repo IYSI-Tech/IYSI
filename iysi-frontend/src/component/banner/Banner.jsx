@@ -1,9 +1,10 @@
 import "./banner.css";
 import { TbWorldSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import FormContainer from "./FormContainer";
 import Aos from "aos";
 import { useEffect } from "react";
+import a from '../../../public/logo512.png'
+import Lazyloading from '../../template/Lazyloading'
 
 const Banner = () => {
   useEffect(() => {
@@ -18,14 +19,12 @@ const Banner = () => {
           IYSI - Empowering Architects,<br />
 Shaping the Future.
           </h1>
-          <Link to="CommunityRouteOne" className="btn white">
+          <Link to="community" className="btn white">
             <TbWorldSearch size="18" /> Join Community
           </Link>
         </div>
         <div className="get-in-touch" data-aos="fade-left" data-aos-once="true">
-          <h1>We&#39;re here to help!</h1>
-          <p>Lets us know who are and course you&#39;d be interested in!</p>
-          <FormContainer />
+          <Lazyloading src={a}/>
         </div>
       </div>
     </div>

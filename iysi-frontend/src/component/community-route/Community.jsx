@@ -19,7 +19,6 @@ const Community = () => {
     institution: "",
     join_reason: "",
     area_interest: "",
-    software_interest: "",
   });
 
   const [errors, setErrors] = useState({
@@ -31,22 +30,7 @@ const Community = () => {
     institution: "",
     join_reason: "",
     area_interest: "",
-    software_interest: "",
   });
-  const handleKeyDown = (e) => {
-    if (e.key == "Enter") {
-      const check = () => {
-        Object.values(formData).map((item) => {
-          if (item === null) {
-            console.log("okay");
-          }
-        });
-      };
-      check();
-      e.preventDefault();
-      handleSubmit();
-    }
-  };
 
   const handleChangeUserName = (e) => {
     const { name, value } = e.target;
@@ -126,7 +110,7 @@ const Community = () => {
 
     console.log("Form Data", formData);
     try {
-      const response = await axios.post("/api/register", formData, {
+      const response = await axios.post("/api/community", formData, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -134,6 +118,7 @@ const Community = () => {
       console.log("Data submitted successfully:", response.data);
       alert("Your request is submitted");
       // console.log("Form Data", formData);
+      e.target.reset();
     } catch (error) {
       if (error.response.data.errors) {
         const serverErrors = error.response.data.errors;
@@ -154,9 +139,6 @@ const Community = () => {
           area_interest: serverErrors.area_interest
             ? serverErrors.area_interest.join("")
             : "",
-          software_interest: serverErrors.software_interest
-            ? serverErrors.software_interest.join("")
-            : "",
         });
       } else {
         setErrors({
@@ -167,15 +149,14 @@ const Community = () => {
           occupation: "",
           institution: "",
           join_reason: "",
-          area_interest: "",
-          software_interest: error.response.statusText,
+          area_interest: error.response.statusText,
         });
       }
       console.error("Error submitting data:", error);
     }
   };
   return (
-    <div className="container community-route-one">
+    <div className="container community">
       <div className="center">
         <div className="route-one-img"></div>
         <div className="get-in-touch">
@@ -184,7 +165,6 @@ const Community = () => {
           <form
             id="get-in-touch"
             name="form1"
-            onKeyDown={handleKeyDown}
             onSubmit={handleSubmit}
           >
             <label>
@@ -240,7 +220,6 @@ const Community = () => {
             </label>
 
             <label>
-              <p>Phone Number</p>
               <PhoneInput
                 country={"ng"}
                 type="tel"
@@ -261,7 +240,7 @@ const Community = () => {
                 required
                 onChange={handleChange}
               >
-                <option defaultValue hidden>
+                <option value="" hidden>
                   Current Occupation
                 </option>
                 <option>Student</option>
@@ -286,7 +265,7 @@ const Community = () => {
                 required
                 onChange={handleChange}
               >
-                <option defaultValue hidden>
+                <option value="" hidden>
                   Sex
                 </option>
                 <option>male</option>
@@ -382,51 +361,9 @@ const Community = () => {
                 <span className="er">{errors.area_interest}</span>
               )}
             </div>
-
-            <div>
-              <p>Preferred Frequency:</p>
-              <div
-                className={`radio ${
-                  errors.gender ? "margin-danger" : "undefined"
-                }`}
-              >
-                <label>
-                  <input
-                    defaultChecked
-                    type="radio"
-                    onChange={handleChange}
-                    name="software_interest"
-                    value="Weekly"
-                  />
-                  Weekly
-                </label>
-                <label>
-                  <input
-                    type="radio"
-                    name="software_interest"
-                    onChange={handleChange}
-                    value="Bi-weekly"
-                  />
-                  Bi-weekly
-                </label>
-                <label>
-                  <input
-                    type="radio"
-                    name="software_interest"
-                    onChange={handleChange}
-                    value="Monthly"
-                  />
-                  Monthly
-                </label>
-              </div>
-              {errors.software_interest && (
-                <span className="er">{errors.software_interest}</span>
-              )}
-            </div>
-
             <div>
               <button type="submit" className="btn bg-variant">
-                Subscribe <GoArrowRight size="20" />
+                Join <GoArrowRight size="20" />
               </button>
             </div>
           </form>

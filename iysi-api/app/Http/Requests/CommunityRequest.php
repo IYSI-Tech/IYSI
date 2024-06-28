@@ -25,13 +25,13 @@ class CommunityRequest extends FormRequest
             'name'           =>  ['required', 'string', 'min:3'],
             'email'          =>  ['required', 'string', 'max:150', 'unique:communities,email'],
             'gender'         =>  ['required', 'string', 'in:male,female'],
-            'mobile'         =>  ['required', 'numeric', 'unique:communities,mobile', 'regex:/^0(70|80|81|90|91|80|81|70)\d{8}$/'],
+            'mobile'         =>  ['required', 'numeric', 'unique:communities,mobile'],
             'occupation'     =>  ['required', 'string', 'max:200'],
             'institution'    =>  ['required', 'string', 'max:200'],
             'join_reason'    =>  ['required', 'string', 'max:200'],
             'area_interest'  =>  ['required', 'string', 'max:200'],
-            'software_interest'=>  ['required', 'string', 'max:200'],
-            'referral_source'  =>  ['required', 'string', 'max:200'],
+            'software_interest'=>  ['nullable', 'string', 'max:200'],
+            'referral_source'  =>  ['nullable', 'string', 'max:200'],
             'comment'          =>  ['nullable', 'string', 'max:200']
         ];
     }

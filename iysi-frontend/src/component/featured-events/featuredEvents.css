@@ -80,6 +80,7 @@
     height: 10rem;
     border-radius: var(--border-radius-2);
     transition: all 0.2s;
+    cursor: pointer;
   }
 .featuredEvents
   .center

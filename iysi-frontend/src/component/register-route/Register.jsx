@@ -66,6 +66,7 @@ const Register = () => {
       console.log("Data submitted successfully:", response.data);
       alert("Your request is submitted");
       // console.log("Form Data", formData);
+      e.target.reset();
     } catch (error) {
       if (error.response.data.errors) {
         const serverErrors = error.response.data.errors;
@@ -95,9 +96,12 @@ const Register = () => {
   return (
   <div className="container register">
     <div className="center">
+      <div className="background"></div>
+      <div className="overlay"></div>
       
 <form className="get-in-touch" name="form1" onSubmit={handleSubmit}>
-            <label htmlFor="">
+  <h1>Register your interest</h1>
+            <label>
               <input
                 type="text"
                 placeholder="First name &nbsp; Middle name  &nbsp; Last name"
@@ -110,7 +114,7 @@ const Register = () => {
               {errors.name && <span className="er">{errors.name}</span>}
             </label>
 
-            <label htmlFor="">
+            <label>
               <input
                 type="email"
                 placeholder="Your email address"
@@ -129,7 +133,7 @@ const Register = () => {
                 required
                 onChange={handleChange}
               >
-                <option defaultValue hidden>
+                <option value="" hidden>
                   Sex
                 </option>
                 <option>male</option>
@@ -162,7 +166,7 @@ const Register = () => {
               )}
             </label>
 
-            <label htmlFor="">
+            <label>
               <input
                 type="text"
                 placeholder="Organization/Institution"
@@ -178,7 +182,7 @@ const Register = () => {
             </label>
 
             <button type="submit" className="btn bg-variant">
-              Get in Touch <GoArrowRight size="20" />
+              Register <GoArrowRight size="20" />
             </button>
           </form>
     </div>
