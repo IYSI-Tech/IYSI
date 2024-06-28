@@ -1,4 +1,4 @@
-# NextEd API
+# IYSI API
 
 ## Setup
 
