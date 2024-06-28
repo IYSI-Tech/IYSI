@@ -8,9 +8,9 @@ const Hire = () => {
   return (
     <div className="container hire" id="about-us">
       <div className="center">
-        <h1>Hire Top Talent with LYSI</h1>
+        <h1>Hire Top Talent with IYSI</h1>
         <p>
-          At LYSI, we connect forward-thinking employers with skilled
+          At IYSI, we connect forward-thinking employers with skilled
           architects ready to make an impact. Our graduates are not just
           equipped with theoretical knowledge but are trained in practical,
           industry-relevant skills, making them valuable assets to any
@@ -25,7 +25,7 @@ const Hire = () => {
           <p>
           Governments and organizations with the desire to create opportunities
           and build a future where architecture thrives on creativity,
-          inclusivity, and excellence can do that with LYSI.
+          inclusivity, and excellence can do that with IYSI.
         </p>
         </div>
         

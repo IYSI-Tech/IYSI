@@ -109,7 +109,7 @@ const Contact = () => {
 
     console.log("Form Data", formData);
     try {
-      const response = await axios.post("/api/contact", formData, {
+      const response = await axios.post(import.meta.env.VITE_IYSI_API_END_POINT_URL+"/api/contact", formData, {
         headers: {
           "Content-Type": "application/json",
         },

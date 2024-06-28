@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-#personal file
-css@media.txt
+# Backend Endpoint
+.env

@@ -110,7 +110,7 @@ const Community = () => {
 
     console.log("Form Data", formData);
     try {
-      const response = await axios.post("/api/community", formData, {
+      const response = await axios.post(import.meta.env.VITE_IYSI_API_END_POINT_URL+"/api/community", formData, {
         headers: {
           "Content-Type": "application/json",
         },

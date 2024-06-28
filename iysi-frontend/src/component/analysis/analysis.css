@@ -99,7 +99,6 @@
   justify-content: stretch;
   gap: 1.5rem;
   width: 22rem;
-  height: fit-content;
   padding: 1.2rem;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius-2);
