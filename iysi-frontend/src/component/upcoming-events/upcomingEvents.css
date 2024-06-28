@@ -1,0 +1,79 @@
+.upcoming-events .center {
+  background-color: var(--color-bg-variant-transparent2);
+  display: block;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+
+.upcoming-events .center > h1,
+.upcoming-events .center article h1 {
+  color: var(--color-bg-variant);
+}
+.upcoming-events .center p {
+  width: 60%;
+  margin: auto;
+}
+.upcoming-events .center article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.upcoming-events .center article h1 {
+  font-size: 1.4rem;
+}
+.upcoming-events .center article ul {
+  line-height: 1.4rem;
+}
+.upcoming-events .center article ul li span {
+  margin-right: 0.2rem;
+  font-weight: 400;
+}
+
+.upcoming-events .center article .btn {
+  margin: 1rem 0 0 0;
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-bg-variant);
+}
+.upcoming-events .center article .btn:hover {
+  background-color: var(--color-bg-variant);
+  color: var(--color-bg);
+}
+
+.upcoming-events .center article svg {
+  margin: 0;
+  transition: margin 0.3s;
+}
+.upcoming-events .center article button:hover svg {
+  background-color: var(--color-bg-variant);
+  color: var(--color-bg);
+  margin-left: 0.5rem;
+}
+
+
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 700px) {
+  .upcoming-events .center {
+    padding: 2rem;
+  }
+
+  .upcoming-events .center article {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events .center p {
+    width: unset;
+}
+}/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+  .upcoming-events .center {
+    padding: 2rem 1rem;
+  }
+}
+
+

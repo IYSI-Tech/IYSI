@@ -1,0 +1,93 @@
+.let-us-know {
+    width: 100%;
+}
+
+.let-us-know .center {
+    padding: 0 8rem 0 6rem;
+    display: grid;
+    grid-template-columns: auto 29rem;
+    align-items: center;
+}
+
+.let-us-know .center img{
+    position: relative;
+    left: 2rem;
+    z-index: 3;
+}
+.let-us-know .center .form{
+    min-width: 29rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-1);
+    padding:2rem;
+}
+.let-us-know .center .form > h1{
+    margin: 0;
+    padding-bottom:2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-text-grey-light);
+    color: var(--color-bg-variant);
+}
+.let-us-know .center .form form{
+    width: 100%;
+    display:flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.let-us-know .center .form form ul{
+    gap: 2rem;
+    display:flex;
+    justify-content: stretch;
+
+}.let-us-know .center .form form ul li{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.let-us-know .center .form form ul li label{
+    font-weight: 400;
+    opacity: 0.85;
+}
+.let-us-know .center .form form ul li input,.let-us-know .center .form form textarea {
+    border: 1px solid var(--color-text-grey-light);
+    border-radius: var(--border-radius-2);
+    width: 100%;
+    padding:0.8rem 1rem;
+    resize: none;
+}
+.let-us-know .center .form form button{
+    align-self: flex-start;
+    background-color: var(--color-bg-variant);
+    color: var(--color-bg);
+}
+
+
+/* ================ TABLET =============== */
+@media only screen and (max-width: 868px) {
+
+    .let-us-know .center {
+        padding: 0 2rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .let-us-know .center img {
+        position: static;
+    }
+
+    .let-us-know .center .form {
+        margin:auto;
+        min-width: 20rem;
+    }
+}
+
+/* ================ MOBILE DEVICES =============== */
+@media only screen and (max-width: 480px) {
+    .let-us-know .center {
+        padding: 0 1rem;
+    }
+}
