@@ -17,7 +17,7 @@ const PartnerWithUs = () => {
         <Lazyloading src={a} alt="parther" />
         <div data-aos="fade-left" data-aos-once="true">
           <h1>Partner with Us</h1>
-          <h3>Collaborate with IYSI: Building the Furture Together</h3>
+          <h2>Collaborate with IYSI: Building the Furture Together</h2>
           <p>
             At IYSI, we believe that strong partnerships are key to advancing
             the field of architecture. By collaborating with us, you can help

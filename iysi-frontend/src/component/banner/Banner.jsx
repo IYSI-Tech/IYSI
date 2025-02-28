@@ -3,7 +3,7 @@ import { TbWorldSearch } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import { useEffect } from "react";
-import a from '../../../public/logo512.png'
+import a from '../../asset/images/logo512.png'
 import Lazyloading from '../../template/Lazyloading'
 
 const Banner = () => {
@@ -24,7 +24,7 @@ Shaping the Future.
           </Link>
         </div>
         <div className="get-in-touch" data-aos="fade-left" data-aos-once="true">
-          <Lazyloading src={a}/>
+          <Lazyloading src={a} alt="logo"/>
         </div>
       </div>
     </div>

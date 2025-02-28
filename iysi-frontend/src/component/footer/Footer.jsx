@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="center">
         <div className="footer-sub">
           <div className="logo-container">
-            <a className="logo" href="/">
+            <a className="logo" href="/" title="logo">
               <Lazyloading className="logo-img" src={a} alt="logo" />
             </a>
           </div>
@@ -35,13 +35,13 @@ const Footer = () => {
             </ul>
           </nav>
           <nav className="icon-link">
-            <a href="https://www.facebook.com/profile.php?id=61560965086958">
+            <a href="https://www.facebook.com/profile.php?id=61560965086958" title="facebook">
               <FaFacebook />
             </a>
-            <a href="https://www.instagram.com/iysi_tech?igsh=YzljYTk1ODg3Zg==">
+            <a href="https://www.instagram.com/iysi_tech?igsh=YzljYTk1ODg3Zg==" title="instagram">
               <AiFillInstagram />
             </a>
-            <a href="https://www.linkedin.com/company/iysi">
+            <a href="https://www.linkedin.com/company/iysi" title="linkedin">
               <FaLinkedinIn />
             </a>
           </nav>
